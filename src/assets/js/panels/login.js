@@ -210,7 +210,7 @@ class Login {
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre nom d'utilisateur"
+                infoLogin.innerHTML = "Entrez votre pseudo"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
