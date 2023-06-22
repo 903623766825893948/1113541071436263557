@@ -205,7 +205,7 @@ class Login {
             cancelMojangBtn.disabled = true;
             loginBtn.disabled = true;
             mailInput.disabled = true;
-            passwordInput.disabled = true;
+            passwordInput.disabled = false;
             infoLogin.innerHTML = "Connexion en cours...";
 
 
