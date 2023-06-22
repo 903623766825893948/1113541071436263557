@@ -184,13 +184,12 @@ class Login {
 
     async loginOffline() {
         let mailInput = document.querySelector('.Mail')
-        let passwordInput = document.querySelector('.Password')
         let cancelMojangBtn = document.querySelector('.cancel-mojang')
         let infoLogin = document.querySelector('.info-login')
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
 
-        mojangBtn.innerHTML = "Offline"
+        mojangBtn.innerHTML = "Cracks"
 
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";
@@ -211,7 +210,7 @@ class Login {
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
+                infoLogin.innerHTML = "Entrez votre nom d'utilisateur"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
