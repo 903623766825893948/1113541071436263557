@@ -1,4 +1,7 @@
-
+/**
+ * @author Luuxis
+ * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
+ */
 
 'use strict';
 
@@ -181,12 +184,13 @@ class Login {
 
     async loginOffline() {
         let mailInput = document.querySelector('.Mail')
+        let passwordInput = document.querySelector('.Password')
         let cancelMojangBtn = document.querySelector('.cancel-mojang')
         let infoLogin = document.querySelector('.info-login')
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
 
-        mojangBtn.innerHTML = "Cracks"
+        mojangBtn.innerHTML = "Offline"
 
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";
@@ -202,12 +206,12 @@ class Login {
             cancelMojangBtn.disabled = true;
             loginBtn.disabled = true;
             mailInput.disabled = true;
-            passwordInput.disabled = false;
+            passwordInput.disabled = true;
             infoLogin.innerHTML = "Connexion en cours...";
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre pseudo"
+                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;

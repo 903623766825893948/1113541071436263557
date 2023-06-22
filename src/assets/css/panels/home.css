@@ -28,6 +28,43 @@
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
 }
 
+.social-tab {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.social-block {
+  /* Styles pour chaque bloc social */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icon-discord {
+  /* Styles pour l'icône Discord */
+  background-image: url('https://cdn3.emoji.gg/emojis/6812_disc.png');
+  /* Autres styles d'icône Discord */
+}
+
+.icon-github {
+  /* Styles pour l'icône GitHub */
+  background-image: url('https://example.com/icon-github.png');
+  /* Autres styles d'icône GitHub */
+}
+
+.icon-youtube {
+  /* Styles pour l'icône YouTube */
+  background-image: url('https://example.com/icon-youtube.png');
+  /* Autres styles d'icône YouTube */
+}
+
+/* Ajoutez d'autres styles CSS personnalisés selon vos besoins */
+
 .settings-btn {
     position: absolute;
     top: 10px;
