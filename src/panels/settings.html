@@ -1,17 +1,14 @@
 <div class="settings-content">
     <div class="tabs-settings-btn">
         <button class="tab-btn-css tab-btn active-tab-btn default-tab-btn">👨‍💻・Comptes</button>
-        &nbsp;
         <button class="tab-btn-css tab-btn">🍵・Java</button>
-        &nbsp;
         <button class="tab-btn-css tab-btn">🚀・Launcher</button>
-        &nbsp;
-        <button class="tab-btn-css-save save-tabs-btn">✔・Enregistrer</button>
+        <button class="tab-btn-css-save save-tabs-btn">✔・Sauvegarder</button>
     </div>
 
     <div class="tabs-settings-content active-tab-content">
         <div class="center-align">
-            <div class="title-settings">Paramètre de votre Comptes.</div>
+            <button class="add-account">Paramètre de votre Compte.</button>
             <div class="accounts"></div>
         </div>
     </div>
@@ -21,7 +18,8 @@
             <div class="title-settings">Paramètre de votre RAM.</div>
             <div class="java-settings">
                 <div class="information">
-                    Définition de la RAM allouée à votre jeu, une quantité plus importante augmentera les performances de votre jeu.<br> À noter qu'il faut éviter de mettre une trop grande quantité, sinon cela peut provoquer des pertes de performances sur vos autres applications.
+                    Définition de la RAM alloué à votre jeu, une quantité plus important augmenteras les performances de votre jeu.<br> A noter qu'il faut éviter de mettre une trop grande quantité sinon cela peut provoquer des pertes de performances survos
+                    autres applications.
                     <br><br>
                     <b>- RAM Maximale :</b> Indique la quantité totale de RAM allouée à votre jeu. Il est recommandé de ne pas dépasser 50% de la quantité totale de RAM présente sur votre PC afin qu'il puisse fonctionner correctement. Si votre ordinateur
                     a plus de 8Go de RAM, nous vous recommandons d'allouer 3Go. Si votre ordinateur a 4Go ou moins, n'allouez pas plus de 2Go.<br><br>
@@ -39,7 +37,7 @@
                             <span></span>
                         </div>
                     </div>
-    
+
                     <div class="ram-info-block">
                         <b>Vous possédez un total de <span id="total-ram">0 Go</span> RAM.</b><br>
                         <b>Vous possédez un total de <span id="free-ram">0 Go</span> RAM disponible.</b>
@@ -48,29 +46,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Fonction de mise à jour des informations de RAM
-        function updateRAMInfo() {
-            var memorySlider = document.querySelector(".memory-slider");
-            var totalRAM = document.querySelector("#total-ram");
-            var freeRAM = document.querySelector("#free-ram");
-    
-            var allocatedRAM = parseFloat(memorySlider.value);
-            var totalRAMSize = 16; // Remplacez par la quantité totale de RAM de votre PC (en Go)
-            var freeRAMSize = totalRAMSize - allocatedRAM;
-    
-            totalRAM.textContent = totalRAMSize + " Go";
-            freeRAM.textContent = freeRAMSize + " Go";
-        }
-    
-        // Écouteur d'événement pour la mise à jour des informations de RAM lors du changement de valeur du slider
-        var memorySlider = document.querySelector(".memory-slider");
-        memorySlider.addEventListener("input", updateRAMInfo);
-    
-        // Appel initial pour mettre à jour les informations de RAM
-        updateRAMInfo();
-    </script>
 
     <div class="tabs-settings-content">
         <div class="center-page">
