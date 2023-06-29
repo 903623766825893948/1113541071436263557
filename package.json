@@ -1,7 +1,7 @@
 {
     "name": "Akteria-Launcher",
     "preductname": "Akteria-Launcher",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Akteria-laucnher",
     "main": "src/app.js",
     "author": "AkteriaCore",
@@ -12,7 +12,7 @@
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --build",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png",
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/903623766825893948/1113541071436263557/master/src/assets/images/icon.png",
         "dev": "nodemon --exec npm start"
     },
     "license": "CC0",
