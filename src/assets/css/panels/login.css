@@ -18,6 +18,7 @@
 }
 
 .login-type-btn {
+    transition: transform 0.3s;
     border-radius: 15px;
     border: none;
     margin: 2% 0;
@@ -30,6 +31,7 @@
 }
 
 .login-type-btn:hover {
+    transform: scale(1.1);
     background-color: #006e47;
     box-shadow: 0 0 5px #006e47;
 }
@@ -90,6 +92,7 @@
 }
 
 .login-btn {
+    transition: transform 0.3s;
     border-radius: 15px;
     border: none;
     margin: 2% 0;
@@ -102,11 +105,32 @@
 }
 
 .login-btn:hover {
+    transform: scale(1.1);
     background-color: #006e47;
     box-shadow: 0 0 5px #006e47;
 }
 
+.annuler-btn {
+    transition: transform 0.3s;
+    border-radius: 15px;
+    border: none;
+    margin: 2% 0;
+    height: 2em;
+    background-color: #ff0000;
+    box-shadow: 0 0 5px #ff0000;
+    color: #ffffff;
+    font: normal normal bold 19px/29px Poppins;
+    cursor: pointer;
+}
+
+.annuler-btn:hover {
+    transform: scale(1.1);
+    background-color: #b60303;
+    box-shadow: 0 0 5px #b60303;
+}
+
 .cancel {
+    transition: transform 0.3s;
     border: none;
     background-color: #ffffff00;
     color: #F1F1F1;
@@ -115,10 +139,30 @@
 }
 
 .cancel:hover {
-    color: #373737;
+    transform: scale(1.1);
+    color: #ffffff;
 }
 
 .cancel:hover:disabled {
+    color: #F1F1F1;
+    cursor: default;
+}
+
+.aide {
+    transition: transform 0.3s;
+    border: none;
+    background-color: #ffffff00;
+    color: #F1F1F1;
+    font: normal normal bold 19px/29px Poppins;
+    cursor: pointer;
+}
+
+.aide:hover {
+    transform: scale(1.1);
+    color: #ffffffa8;
+}
+
+.aide:hover:disabled {
     color: #F1F1F1;
     cursor: default;
 }

@@ -1,13 +1,20 @@
 <div class="login-content">
     <div class="login-card">
-        <p>👋Bienvenue !</p>
+        <p>👋Bienvenue !</p> 
         <p>➕ Connectez vous au launcher pour jouer. ➕</p>
         <div class="login-type">
             <button class="mojang login-type-btn">Mojang</button>
             <button class="microsoft login-type-btn">💻・Microsoft</button>
         </div>
         <button class="cancel cancel-login" style="display: none;">Annuler</button>
-    </div>
+        <p>─────────────────────────────────</p>
+        <button onclick="window.open('https://discord.gg/kZTqMjy7Gj', '_blank')" style="background-color: #7289da; color: #FFFFFF; width: 150px; height: 45px; border-radius: 10px; font-family: 'Arial Black', sans-serif; cursor: pointer;">🎯・Notre Discord</button>
+        <button onclick="window.open('https://akteria.fr', '_blank')" style="background-color: #08965b; color: #FFFFFF; width: 150px; height: 45px; border-radius: 10px; font-family: 'Arial Black', sans-serif; cursor: pointer;">🍍・Notre Site</button>
+        <button onclick="window.open('https://boutique.akteria.fr', '_blank')" style="background-color: #ebdf3e; color: #FFFFFF; width: 150px; height: 45px; border-radius: 10px; font-family: 'Arial Black', sans-serif; cursor: pointer;">🍉・Notre Shop</button>
+
+        
+
+    </div> 
 
     <div class="login-card-mojang">
         <div class="card-body">
@@ -22,9 +29,15 @@
             <div class="login-options">
                 <div class="btn-option-login">
                     <button class="login-btn">💾・Connexion</button>
-                    <button class="cancel cancel-mojang">❌・Annuler</button>
+                    <button class="cancel cancel-mojang annuler-btn">❌・Annuler</button>
+                    <a href="https://discord.gg/kZTqMjy7Gj" class="aide cancel-mojang" target="_blank">        ❓・Besoin d'aide ?</a>
+                    <style>
+                        .aide.cancel-mojang {
+                          text-decoration: none;
+                        }
+                      </style>
                 </div>
-            </div>
+            </div>           
         </div>
     </div>
 

@@ -126,6 +126,15 @@
     box-shadow: 0 0 5px #00bd7a;
 }
 
+.play-btn {
+    transition: transform 0.3s;
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.1);
+  }
+  
+
 .download-content {
     position: absolute;
     top: 50%;
