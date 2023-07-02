@@ -1,7 +1,4 @@
-/**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
- */
+
 
 'use strict';
 
@@ -50,11 +47,6 @@ class Settings {
                     accountSelect(uuid)
                 }
             }
-        })
-
-        document.querySelector('.add-account').addEventListener('click', () => {
-            document.querySelector(".cancel-login").style.display = "contents";
-            changePanel("login");
         })
     }
 

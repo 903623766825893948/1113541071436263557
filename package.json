@@ -1,8 +1,8 @@
 {
     "name": "Akteria-Launcher",
     "preductname": "Akteria-Launcher",
-    "version": "1.0.0",
-    "description": "Launcher pour akteria",
+    "version": "1.1.0",
+    "description": "Akteria-launcher",
     "main": "src/app.js",
     "author": "AkteriaCore",
     "url": "https://skycraftmanager2522552.000webhostapp.com/",
@@ -12,7 +12,7 @@
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "build": "node build.js --build",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png",
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/903623766825893948/1113541071436263557/master/src/assets/images/icon.png",
         "dev": "nodemon --exec npm start"
     },
     "license": "CC0",
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/903623766825893948/Akteria-Launcher.git"
+        "url": "git+https://github.com/903623766825893948/1113541071436263557.git"
     }
 }

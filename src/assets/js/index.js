@@ -1,7 +1,4 @@
-/**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
- */
+
 
 'use strict';
 const { ipcRenderer } = require('electron');
@@ -22,9 +19,9 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" },
-            { "message": "Linux n' ai pas un os, mais un kernel.", "author": "Luuxis" }
+            { "message": "Bienvenue !", "author": "Akteria" },
+            { "message": "Bienvenue !", "author": "Akteria" },
+            { "message": "Bienvenue !", "author": "Akteria" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -44,12 +41,12 @@ class Splash {
 
     async checkUpdate() {
         if (dev) return this.startLauncher();
-        this.setStatus(`recherche de mise à jour...`);
+        this.setStatus(`Recherche de mise à jour...`);
 
         ipcRenderer.invoke('update-app').then(err => {
             if (err.error) {
                 let error = err.message;
-                this.shutdown(`erreur lors de la recherche de mise à jour :<br>${error}`);
+                this.shutdown(`Erreur lors de la recherche de mise à jour :<br>${error}`);
             }
         })
 

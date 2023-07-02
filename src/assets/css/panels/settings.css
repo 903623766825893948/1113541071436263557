@@ -10,9 +10,23 @@
     justify-content: center;
 }
 
+.tabs-dev-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: url('https://raw.githubusercontent.com/903623766825893948/1113541071436263557/master/src/assets/images/icon.png') center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+
 .tab-btn-css {
+    transition: transform 0.3s;
     border-radius: 23px;
-    width: 160px;
+    width: 200px;
     height: 37px;
     margin: auto 30px;
     background: #00bd7a;
@@ -24,18 +38,60 @@
 }
 
 .tab-btn-css:hover {
+    transform: scale(1.1);
     background: #006e47;
     box-shadow: 0 0 5px #006e47;
     border: 4px solid #006e47;
 }
 
+.tab-btn-css-save {
+    transition: transform 0.3s;
+    border-radius: 23px;
+    width: 200px;
+    height: 37px;
+    margin: auto 30px;
+    background: #46c20c;
+    border: 4px solid #46c20c;
+    font: normal normal bold 20px/25px Poppins;
+    cursor: pointer;
+    box-shadow: 0 0 5px #46c20c;
+    outline: none;
+}
+
+.tab-btn-css-save:hover {
+    transform: scale(1.1);
+    background: #339406;
+    box-shadow: 0 0 5px #339406;
+    border: 4px solid #339406;
+}
+
+.tab-btn-css-annuler {
+    border-radius: 23px;
+    width: 200px;
+    height: 37px;
+    margin: auto 30px;
+    background: #eb0404;
+    border: 4px solid #eb0404;
+    font: normal normal bold 20px/25px Poppins;
+    cursor: pointer;
+    box-shadow: 0 0 5px #eb0404;
+    outline: none;
+}
+
+.tab-btn-css-annuler:hover {
+    background: #b80101;
+    box-shadow: 0 0 5px #b80101;
+    border: 4px solid #b80101;
+}
 .active-tab-btn {
+    transition: transform 0.3s;
     background: #006e47;
     border: 4px solid #bd5d26;
     box-shadow: 0 0 5px #bd5d26;
 }
 
 .active-tab-btn:hover {
+    transform: scale(1.1);
     background: #006e47;
     border: 4px solid #bd5d26;
     box-shadow: 0 0 5px #bd5d26;
@@ -67,6 +123,13 @@
 }
 
 .title-settings {
+    text-align: center;
+    font: normal normal bold 20px/25px Poppins;
+    color: #F1F1F1;
+    margin: 2% 0;
+}
+
+.title-accounts {
     text-align: center;
     font: normal normal bold 20px/25px Poppins;
     color: #F1F1F1;
@@ -121,6 +184,7 @@
 }
 
 .account {
+    transition: transform 0.3s;
     display: inline-block;
     background: #00bd7a;
     box-shadow: 0 0 5px #006e47;
@@ -134,6 +198,7 @@
 }
 
 .account:hover {
+    transform: scale(1.1);
     background: #006e47;
     box-shadow: 0 0 5px #006e47;
     border: 4px solid #006e47;
@@ -188,12 +253,14 @@
 }
 
 .active-account {
+    transition: transform 0.3s;
     background: #006e47;
     border: 4px solid #bd5d26;
     box-shadow: 0 0 5px #bd5d26;
 }
 
 .active-account:hover {
+    transform: scale(1.1);
     background: #006e47;
     border: 4px solid #bd5d26;
     box-shadow: 0 0 5px #bd5d26;
@@ -302,6 +369,7 @@
 }
 
 .path-button {
+    transition: transform 0.3s;
     font: normal normal bold 13px/20px Poppins;
     border-radius: 18px;
     padding: 8px 30px;
@@ -314,10 +382,12 @@
 }
 
 .path-button:hover {
+    transform: scale(1.1);
     background-color: #1f1f1f;
 }
 
 .path-button-reset {
+    transition: transform 0.3s;
     font: normal normal bold 13px/20px Poppins;
     border-radius: 18px;
     padding: 8px 30px;
@@ -330,6 +400,7 @@
 }
 
 .path-button-reset:hover {
+    transform: scale(1.1);
     background-color: #1f1f1f;
 }
 
