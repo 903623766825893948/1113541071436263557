@@ -5,7 +5,7 @@
 import { logger, database, changePanel } from '../utils.js';
 
 const { Launch, Status } = require('minecraft-java-core');
-const { ipcRenderer } = require('electron');
+const { ipcRenderer, } = require('electron');
 const launch = new Launch();
 const pkg = require('../package.json');
 
@@ -227,5 +227,7 @@ class Home {
         let allMonth = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
         return { year: year, month: allMonth[month - 1], day: day }
     }
+    
+    
 }
 export default Home;
