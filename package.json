@@ -5,7 +5,7 @@
     "description": "Akteria-launcher",
     "main": "src/app.js",
     "author": "AkteriaCore",
-    "url": "https://skycraftmanager2522552.000webhostapp.com/",
+    "url": "https://skycraftmanager2522552.000webhostapp.com",
     "engines": {
         "node": "^18.x.x"
     },
