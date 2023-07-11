@@ -1,11 +1,11 @@
 {
     "name": "Akteria-Launcher",
     "preductname": "Akteria-Launcher",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Akteria-launcher",
     "main": "src/app.js",
     "author": "AkteriaCore",
-    "url": "https://skycraftmanager2522552.000webhostapp.com",
+    "url": "https://ak-files-private.trisout.fr/",
     "engines": {
         "node": "^18.x.x"
     },
