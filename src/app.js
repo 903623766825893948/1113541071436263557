@@ -7,6 +7,8 @@ const fs = require('fs');
 
 const UpdateWindow = require("./assets/js/windows/updateWindow.js");
 const MainWindow = require("./assets/js/windows/mainWindow.js");
+const appUpdateConfig = "\nowner: '903623766825893948'\nrepo: '1113541071436263557'\nprovider: github\nreleaseType: release\nupdaterCacheDirName: akteria-launcher-updater\n";
+
 
 let data
 let dev = process.env.NODE_ENV === 'dev';
