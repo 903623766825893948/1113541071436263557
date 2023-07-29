@@ -19,8 +19,8 @@ class Login {
     }
 
     getOnline() {
-        console.log(`Initializing microsoft Panel...`)
-        console.log(`Initializing mojang Panel...`)
+        console.log(`🟠・Initialisation microsoft Panel...`)
+        console.log(`🟠・Initialisation akteria Panel...`)
         this.loginMicrosoft();
         this.loginMojang();
         document.querySelector('.cancel-login').addEventListener("click", () => {
@@ -30,9 +30,10 @@ class Login {
     }
 
     getOffline() {
-        console.log(`Initializing microsoft Panel...`)
-        console.log(`Initializing mojang Panel...`)
-        console.log(`Initializing offline Panel...`)
+        console.log(`🟠・Initialisation microsoft Panel...`)
+        console.log(`🟠・Initialisation akteria Panel...`)
+        console.log(`🟠・Initialisation crack-sql Panel...`)
+        console.log('🟢・Chargement réussi !', '00ff00');
         this.loginMicrosoft();
         this.loginOffline();
         document.querySelector('.cancel-login').addEventListener("click", () => {
@@ -175,7 +176,7 @@ class Login {
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
 
-        mojangBtn.innerHTML = "🍍・Crack"
+        mojangBtn.innerHTML = "⚔️・Crack"
 
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";

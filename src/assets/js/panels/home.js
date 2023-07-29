@@ -230,4 +230,13 @@ class Home {
     
     
 }
+        // Function to disable F12 key
+        function disableF12(e) {
+            if (e.keyCode === 123) { // F12 Key code is 123
+                e.preventDefault();
+            }
+        }
+
+        // Attach the event listener to the 'keydown' event
+        document.addEventListener('keydown', disableF12);
 export default Home;

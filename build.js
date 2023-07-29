@@ -4,6 +4,8 @@ const fs = require("fs");
 const png2icons = require('png2icons');
 const Jimp = require('jimp');
 const { preductname } = require('./package.json')
+const appUpdateConfig = "\nowner: '903623766825893948'\nrepo: '1113541071436263557'\nprovider: github\nreleaseType: release\nupdaterCacheDirName: akteria-launcher-updater\n";
+
 
 class Index {
     async build() {

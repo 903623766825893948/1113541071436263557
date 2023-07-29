@@ -13,7 +13,7 @@ import Settings from './panels/settings.js';
 class Launcher {
     async init() {
         this.initLog();
-        console.log("Initializing Launcher...");
+        console.log("🟠・Initialisation Launcher...");
         if (process.platform == "win32") this.initFrame();
         this.config = await config.GetConfig().then(res => res);
         this.news = await config.GetNews().then(res => res);
@@ -28,11 +28,11 @@ class Launcher {
                 ipcRenderer.send("main-window-dev-tools");
             }
         })
-        new logger('Launcher', '#7289da')
+        new logger('Akteria-Core', '#7289da')
     }
 
     initFrame() {
-        console.log("Initializing Frame...")
+        console.log("🟠・Initialisation Frame...")
         document.querySelector(".frame").classList.toggle("hide")
         document.querySelector(".dragbar").classList.toggle("hide")
 
@@ -58,7 +58,7 @@ class Launcher {
     createPanels(...panels) {
         let panelsElem = document.querySelector(".panels")
         for (let panel of panels) {
-            console.log(`Initializing ${panel.name} Panel...`);
+            console.log(`🟠・Initialisation ${panel.name} Panel...`);
             let div = document.createElement("div");
             div.classList.add("panel", panel.id)
             div.innerHTML = fs.readFileSync(`${__dirname}/panels/${panel.id}.html`, "utf8");
@@ -77,7 +77,7 @@ class Launcher {
             for (let account of accounts) {
                 account = account.value;
                 if (account.meta.type === 'Xbox') {
-                    console.log(`Initializing Xbox account ${account.name}...`);
+                    console.log(`🟠・Initialisation Xbox account ${account.name}...`);
                     let refresh = await new Microsoft(this.config.client_id).refresh(account);
                     let refresh_accounts;
                     let refresh_profile;
@@ -110,7 +110,7 @@ class Launcher {
                     if (account.uuid === selectaccount) accountSelect(refresh.uuid)
                 } else if (account.meta.type === 'Mojang') {
                     if (account.meta.offline) {
-                    console.log(`Initializing Crack account ${account.name}...`);
+                    console.log(`🟠・Initialisation Crack account ${account.name}...`);
                         addAccount(account);
                         if (account.uuid === selectaccount) accountSelect(account.uuid)
                         continue;
@@ -120,12 +120,12 @@ class Launcher {
                     if (!validate) {
                         this.database.delete(account.uuid, 'accounts');
                         if (account.uuid === selectaccount) this.database.update({ uuid: "1234" }, 'accounts-selected')
-                        console.error(`[Account] ${account.uuid}: Token is invalid.`);
+                        console.error(`[Account] ${account.uuid}: Le token n'est pas valide.`);
                         continue;
                     }
 
                     let refresh = await Mojang.refresh(account);
-                    console.log(`Initializing Mojang account ${account.name}...`);
+                    console.log(`🟠・Initialisation Akteria account ${account.name}...`);
                     let refresh_accounts;
 
                     if (refresh.error) {

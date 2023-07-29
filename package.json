@@ -1,7 +1,7 @@
 {
     "name": "Akteria-Launcher",
     "preductname": "Akteria-Launcher",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "description": "Akteria-launcher",
     "main": "src/app.js",
     "author": "AkteriaCore",
