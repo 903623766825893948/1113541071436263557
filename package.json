@@ -1,7 +1,7 @@
 {
     "name": "Akteria-Launcher",
     "preductname": "Akteria-Launcher",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "Akteria-launcher",
     "main": "src/app.js",
     "author": "AkteriaCore",
@@ -20,6 +20,8 @@
         "ext": "js,html,css"
     },
     "dependencies": {
+        "background": "^0.3.3",
+        "discord-rpc": "^4.0.1",
         "electron-updater": "^5.0.1",
         "jimp": "^0.22.8",
         "minecraft-java-core": "^3.5.0",

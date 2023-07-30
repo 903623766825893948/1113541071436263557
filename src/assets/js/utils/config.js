@@ -4,8 +4,8 @@ const pkg = require('../package.json');
 const fetch = require("node-fetch")
 let url = pkg.user ? `${pkg.url}/${pkg.user}` : pkg.url
 
-let config = `${url}/launcher/config-launcher/config.json`;
-let news = `${url}/launcher/news-launcher/GetNews.php`;
+let config = `${url}/config-akteria-launcher/config.json`;
+let news = `${url}/news-akteria-launcher/news.php`;
 
 class Config {
     GetConfig() {

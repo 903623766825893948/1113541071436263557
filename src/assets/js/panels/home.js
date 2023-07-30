@@ -171,7 +171,7 @@ class Home {
             });
 
             launch.on('data', (e) => {
-                new logger('Minecraft', '#36b030');
+                new logger('Akteria-Mc', '#36b030');
                 if (launcherSettings.launcher.close === 'close-launcher') ipcRenderer.send("main-window-hide");
                 ipcRenderer.send('main-window-progress-reset')
                 progressBar.style.display = "none"

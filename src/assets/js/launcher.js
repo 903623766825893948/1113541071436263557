@@ -4,11 +4,33 @@
 const fs = require('fs');
 const { Microsoft, Mojang } = require('minecraft-java-core');
 const { ipcRenderer } = require('electron');
+const { Client } = require('discord-rpc');
 
 import { config, logger, changePanel, database, addAccount, accountSelect } from './utils.js';
 import Login from './panels/login.js';
 import Home from './panels/home.js';
 import Settings from './panels/settings.js';
+
+function updateRichPresence() {
+    const clientId = '1083060360107528303';
+
+    const rpc = new Client({ transport: 'ipc' });
+
+    rpc.on('ready', () => {
+        rpc.setActivity({
+            details: 'En train de jouer à Minecraft',
+            state: 'Dans le launcher Akteria',
+            startTimestamp: new Date(),
+            largeImageKey: 'badge',
+            largeImageText: 'badge',
+            smallImageKey: 'badge',
+            smallImageText: 'badge'
+        });
+    });
+
+    rpc.login({ clientId }).catch(console.error);
+}
+
 
 class Launcher {
     async init() {
@@ -30,6 +52,13 @@ class Launcher {
         })
         new logger('Akteria-Core', '#7289da')
     }
+
+    async initBackground() {
+        let isDarkTheme = await ipcRenderer.invoke("is-dark-theme").then(res => res);
+        let backgrounds = fs.readdirSync(`${__dirname}/assets/images/background/${isDarkTheme ? 'dark' : 'light'}`);
+        let background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+        document.body.style.backgroundImage = `url(./assets/images/background/${isDarkTheme ? 'dark' : 'light'}/${background})`;
+    }      
 
     initFrame() {
         console.log("🟠・Initialisation Frame...")
